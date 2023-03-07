@@ -44,7 +44,7 @@ button {
 .landing-page {
   height: 100vh;
   width: 100%;
-  background: url("./background.jpg") center/cover no-repeat;
+  background: url("./images/background.jpg") center/cover no-repeat;
   filter: brightness(85%);
 }
 
@@ -107,14 +107,14 @@ button {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: url("memberone.jpeg") center/cover;
+  background: url("./images/memberone.jpeg") center/cover;
 }
 
 .member-two-photo {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background: url("membertwo.jpeg") center/cover;
+  background: url("./images/membertwo.jpeg") center/cover;
 }
 
 .member-about {
