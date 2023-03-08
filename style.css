@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   height: 50px;
   width: 100%;
@@ -18,6 +22,10 @@ a {
 li {
   color: #f1f1f1;
   margin-left: 46px;
+}
+
+.disabled {
+  cursor: not-allowed;
 }
 
 ul {
@@ -73,6 +81,12 @@ button {
   padding: 14px 58px;
   background: none;
   border: solid #ffffff;
+  transition: 1s;
+}
+
+.main-button:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 .about {
@@ -150,7 +164,6 @@ button {
   width: 100%;
   height: 100vh;
   background: #405d78;
-  position: relative;
 }
 
 .box-offer {
@@ -162,6 +175,18 @@ button {
   font-family: "Roboto", sans-serif;
   text-align: center;
   line-height: 225px;
+  transition: transform 0.5s;
+}
+
+.box-offer:hover {
+  transform: scale(1.05);
+}
+
+span {
+  display: block;
+  color: #000000;
+  font-size: 18px;
+  margin-top: -195px;
 }
 
 .box-grid {
@@ -172,6 +197,7 @@ button {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   grid-gap: 50px;
+  position: relative;
 }
 
 .mini {
@@ -180,8 +206,8 @@ button {
   border-radius: 50%;
   background: #e07a64;
   position: absolute;
-  left: 227px;
-  top: 164px;
+  left: -10px;
+  top: -10px;
 }
 
 footer {
