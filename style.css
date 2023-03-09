@@ -50,6 +50,10 @@ button {
   height: 100vh;
   width: 100%;
   background: url("./images/background.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .shadow {
@@ -58,29 +62,20 @@ button {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.container {
+/* .container {
   width: 600px;
   position: absolute;
   left: 91px;
   top: 231px;
   bottom: 181px;
-}
-
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  height: 600px;
-  z-index: 2;
 } */
 
-/* .container {
-  width: 600px;
-  height: auto;
-  margin: auto;
+/* landing page left */
+
+.container {
   position: relative;
-} */
+  max-width: 600px;
+}
 
 .title {
   font-weight: bold;
