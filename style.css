@@ -267,11 +267,12 @@ footer {
     display: none;
   }
   footer {
-    height: 147px;
+    /* height: 147px; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background: red;
   }
   .footer-text,
   .icons {
