@@ -72,7 +72,7 @@ button {
   position: absolute;
 }
 
-.container {
+.text-box {
   margin-left: 90px;
   display: flex;
   justify-content: flex-start;
@@ -107,73 +107,71 @@ button {
 }
 
 .about {
-  width: 100%;
   height: 800px;
+  width: 100%;
 }
 
-.team {
+.headline-about,
+.headline-offer {
   font-size: 36px;
-  color: #152d41;
   font-weight: bold;
-  margin-top: 51px;
-  margin-left: 95px;
-  margin-bottom: 78px;
+  padding: 60px 0 78px 95px;
+  color: #152d41;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .box {
-  width: 960px;
-  height: 685px;
-  margin: 0 auto;
-  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
 }
 
-.member-one {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 75px;
+.member-one-photo,
+.member-two-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  aspect-ratio: 1;
 }
 
 .member-one-photo {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
   background: url("./images/memberone.jpeg") center/cover;
 }
 
 .member-two-photo {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
   background: url("./images/membertwo.jpeg") center/cover;
 }
 
-.member-about {
-  width: 600px;
+.box:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
-.name-one,
-.about-one {
+.team,
+.text-about {
   font-size: 18px;
+}
+
+.team,
+.text-about,
+.box-offer,
+.new-offer {
   color: #000000;
 }
 
-.about-one {
-  text-align: justify;
-}
-
-.name-one {
+.team {
   font-weight: bold;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .headline-offer {
-  font-size: 36px;
   color: #ffffff;
-  font-weight: bold;
-  padding-top: 60px;
-  margin-left: 95px;
-  margin-bottom: 78px;
 }
 
 .offer {
@@ -186,10 +184,10 @@ button {
   width: 225px;
   height: 225px;
   background: #f1f1f1;
-  color: #000000;
   font-size: 24px;
-  text-align: center;
-  line-height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.5s;
 }
 
@@ -197,21 +195,19 @@ button {
   transform: scale(1.05);
 }
 
-span {
-  display: block;
-  color: #000000;
-  font-size: 18px;
-  margin-top: -195px;
+.new-offer::after {
+  content: "\A (nowość)";
+  white-space: pre-wrap;
 }
 
 .box-grid {
-  width: 960px;
-  height: 685px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
-  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  gap: 60px;
+  justify-content: center;
+}
+
+.box-offer:first-of-type {
   position: relative;
 }
 
