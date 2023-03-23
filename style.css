@@ -8,7 +8,6 @@ body {
 
 nav {
   height: 50px;
-  width: 100%;
   background: #4e4e4e;
   display: flex;
   align-items: center;
@@ -36,7 +35,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 90px;
+  /* margin-right: 90px; */
 }
 
 h1,
@@ -46,7 +45,7 @@ button {
   color: #ffffff;
 }
 
-.landing-page {
+header {
   height: 100vh;
   width: 100%;
   background: url("./images/background.jpg") center/cover no-repeat;
@@ -89,11 +88,6 @@ button {
   background: none;
   border: solid #ffffff;
   transition: 1s;
-}
-
-.main-button:hover {
-  background: #ffffff;
-  color: #000000;
 }
 
 .about,
@@ -170,8 +164,8 @@ button {
 }
 
 .box-offer {
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   background: #f1f1f1;
   font-size: 24px;
   display: flex;
@@ -179,10 +173,6 @@ button {
   align-items: center;
   text-align: center;
   transition: transform 0.5s;
-}
-
-.box-offer:hover {
-  transform: scale(1.05);
 }
 
 .new-offer::after {
@@ -258,6 +248,13 @@ footer {
   }
   .box-offer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .box-offer:hover {
+    transform: scale(1.05);
+  }
+  .main-button:hover {
+    background: #ffffff;
+    color: #000000;
   }
 }
 
