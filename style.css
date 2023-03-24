@@ -229,25 +229,19 @@ header {
 footer {
   height: 71px;
   background: #4e4e4e;
-  vertical-align: middle;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
 }
 
 .footer-container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.icons {
+.footer-inside {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-right: 82px; */
 }
 
 .fa-square-facebook,
@@ -265,7 +259,15 @@ footer {
 }
 
 .footer-text {
-  /* margin-left: 94px; */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -295,18 +297,15 @@ footer {
     display: none;
   }
 
-  .footer {
+  footer {
     height: 147px;
+  }
+  .footer-inside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
-  .footer-text,
-  .icons {
-    margin: 0 auto;
-  }
-
   .box,
   .box:nth-of-type(even) {
     text-align: left;
