@@ -13,9 +13,13 @@ nav {
   align-items: center;
 }
 
-.nav-container {
-  width: 960px;
+.container {
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.nav-cont {
+  width: 960px;
 }
 
 .navigation {
@@ -76,10 +80,9 @@ header {
   position: absolute;
 }
 
-.landing-container {
-  width: 960px;
-  margin: 0 auto;
+.landing {
   z-index: 10;
+  width: 960px;
 }
 
 .text-box {
@@ -126,18 +129,12 @@ header {
   color: #152d41;
 }
 
-.container,
-.offer-container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 70px;
-  padding-bottom: 75px;
+  padding-bottom: 60px;
 }
 
 .member-one-photo,
@@ -233,11 +230,6 @@ footer {
   align-items: center;
 }
 
-.footer-container {
-  width: 960px;
-  margin: 0 auto;
-}
-
 .footer-inside {
   display: flex;
   justify-content: space-between;
@@ -315,8 +307,7 @@ footer {
   .member-about,
   .navigation,
   .text-box {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
   }
 
   .headline-about,
@@ -331,5 +322,10 @@ footer {
 
   .title {
     max-width: 350px;
+  }
+
+  .box-offer {
+    width: 330px;
+    height: 330px;
   }
 }
