@@ -18,7 +18,8 @@ nav {
   margin: 0 auto;
 }
 
-.nav-cont {
+.nav-cont,
+.foot {
   width: 960px;
 }
 
